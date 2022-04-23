@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+a{
+  font-size: 4rem;
+}
+a:hover {
+  color: var(--primary-color) !important;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*===== Variable Define =====*/
+:root {
+  --primary-color: #cb1482;
+  --secondry-color: #c79118;
+  --third-color: #f98169;
+  --white-color: #fff;
+  --text-color: rgb(19, 18, 18);
+  --text-gray: #999;
+  --black-color: #000;
+  --primary-font: 'Roboto', sans-serif;
+  --secondry-font: 'Quicksand', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*
+=========================================
+    Custom Scrollbar
+=========================================
+*/ 
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+} 
+::-webkit-scrollbar-track {
+  background: var(--white-color); 
+} 
+::-webkit-scrollbar-thumb {
+  background:var(--primary-color); 
+} 
+
+/*
+==========================================
+   Custom CSS Design
+==========================================
+*/
+#logo{
+  
+  margin: px 10px
+
+}
+#logo img{
+  height: 145px;
+  margin: -2px 0px;
+}
+h1 {
+  font-size: 3.5rem;
+  font-weight: 1000;
+  margin-bottom: 0.9rem;
+  color: var(--secondry-color);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 3.25rem;
+  text-transform: capitalize;
+  font-family: var(--secondry-font);
+  color: #c79118;
+  line-height: 4rem;
+
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #f2f2f2;
+}
+
+.footer-links a:hover {
+  display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: var(--secondry-color);
+}
+.footer-links a {
+  display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: var(--secondry-color);
+}
+.contact-form{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  background:#fff;
+  margin:50px 0;
+}
+.contact-form > * {
+  width:60%;
+}
+.contact-form .first-container{
+  background:linear-gradient(45deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../images/city.jpg") center center/cover no-repeat;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width: 1600px;
+  margin-left: 30px;
+}
+.contact-form .first-container .info-container div{
+  margin:24px 0;
+}
+.contact-form .first-container .info-container div h3{
+  color:#fff;
+  font-size:18px;
+  font-weight: 400;
+  line-height: 1.2;
+  padding-bottom: 10px;
+}
+.contact-form .first-container .info-container div p{
+  font-size: 16px;
+  line-height: 1.6;
+  color:#c79118;
+}
+.contact-form .first-container .info-container div:first-of-type p{
+  max-width:260px;
+  color:#999;
+}
+.contact-form .second-container{
+  padding-left:30px;
+  padding-right:0px;
+  padding-bottom:30px;
+  width:100%;
+}
+.contact-form .second-container form{
+  display:flex;
+  flex-direction: column;
+}
+.contact-form .second-container h2{
+  text-align: center;
+  margin-bottom:20px;
+  font-weight: 700;
+  font-size: 3.25rem;
+  text-transform: capitalize;
+  font-family: var(--secondry-font);
+  color: #800f53;
+  line-height: 4rem;
+} 
+.contact-form .second-container form .form-group{
+  margin-bottom:10px;
+}
+.contact-form .second-container form .form-group *{
+   min-height: 55px;
+   border:1px solid #e6e6e6;
+   padding:0 20px;
+}
+.contact-form .second-container form .form-group label{
+  display:flex;
+  align-items:center;
+  width:100%;
+  border:1px solid #e6e6e6;
+  font-size:16px;
+  color:#333;
+  text-transform: uppercase;
+  margin-top:-1px;
+}
+.contact-form .second-container form .form-group:first-of-type input{
+  width:50.1%;
+  margin-right:-5px;
+}
+.contact-form .second-container form .form-group input{
+  width:100%;
+  font-size:15px;
+  margin-top:-2px;
+}
+.contact-form .second-container form .form-group input::placeholder,
+.contact-form .second-container form .form-group .textarea::placeholder{
+  color:#999;
+}
+.contact-form .second-container form .form-group .textarea{
+  width:100%;
+  min-height: 80px;
+  resize:none;
+  padding:10px 20px;
+  margin-top:-1px;
+}
+.contact-form .second-container form .btn{
+  width:200px;
+  height:50px;
+  background:#c79118;;
+  color:#fff;
+  font-size:17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border:0;
+  position:relative;
+  left:calc(50% - 100px);
+  cursor:pointer;
+}
+.contact-form .second-container form .btn:hover{
+  background:#333;
+}
+@media screen and (max-width:800px){
+  .contact-form{
+    width:90vw;
+  }
+}
+@media screen and (max-width:700px){
+  .contact-form{
+    flex-direction: column-reverse;
+
+  }
+  .contact-form > *{
+    width:100%;
+  }
+  .contact-form .first-container{
+    padding:40px 0;
+    width: auto;
+  }
+}
+
+  
